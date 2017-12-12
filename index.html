@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Images</title>
+    <!-- 
+        files used:
+        style.css for styling
+        script.js for additional behaviour 
+    -->
+    <meta name="viewpoint" content="width=device-width" />
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    
+</head>
+<body onresize="displayDim()">
+    <div class="wrapper">
+        <header>
+            <h1>Mahmoud Ibrahim</h1>
+        </header>
+        <p id="dim-disp"></p>
+        <div class="main"><!--the ul element contains a dummy picture to be replaced by images added through script.js-->
+            <ul id="image-list"> 
+                <li>
+                    <picture>
+                      <source media="(min-width: 1500px)" srcset="">
+                      <source media="(min-width: 700px)" srcset="">
+                      <source media="(max-width: 700px)" srcset="">
+                      <img src="" alt="an image">
+                    </picture>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
